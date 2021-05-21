@@ -1,43 +1,35 @@
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/indices/" rel="noopener" target="_blank"><span class="blue-text">Indices</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Quotes</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
   {
-  "colorTheme": "dark",
-  "dateRange": "12M",
-  "showChart": false,
-  "locale": "in",
-  "largeChartUrl": "",
-  "isTransparent": true,
-  "showSymbolLogo": true,
-  "width": "400",
-  "height": "465",
-  "tabs": [
+  "symbols": [
     {
-      "title": "Indices",
-      "symbols": [
-        {
-          "s": "FOREXCOM:SPXUSD",
-          "d": "S&P 500"
-        },
-        {
-          "s": "FOREXCOM:NSXUSD",
-          "d": "Nasdaq 100"
-        },
-        {
-          "s": "NSE:NIFTY"
-        },
-        {
-          "s": "NSE:BANKNIFTY"
-        },
-        {
-          "s": "NSE:INDIAVIX"
-        }
-      ],
-      "originalTitle": "Indices"
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "Nasdaq 100"
+    },
+    {
+      "description": "Sensex",
+      "proName": "BSE:SENSEX"
+    },
+    {
+      "description": "BTC/USDT",
+      "proName": "BINANCE:BTCUSDT"
+    },
+    {
+      "description": "ETH/USDT",
+      "proName": "BINANCE:ETHUSDT"
     }
-  ]
+  ],
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "showSymbolLogo": true,
+  "locale": "in"
 }
   </script>
 </div>
