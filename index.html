@@ -1,8 +1,8 @@
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Quotes</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
   {
   "symbols": [
     {
@@ -12,6 +12,10 @@
     {
       "proName": "FOREXCOM:NSXUSD",
       "title": "Nasdaq 100"
+    },
+    {
+      "description": "SSE Composite",
+      "proName": "SSE:000001"
     },
     {
       "description": "Sensex",
@@ -24,11 +28,16 @@
     {
       "description": "ETH/USDT",
       "proName": "BINANCE:ETHUSDT"
+    },
+    {
+      "description": "DOT/USDT",
+      "proName": "BINANCE:DOTUSDT"
     }
   ],
-  "colorTheme": "dark",
-  "isTransparent": false,
   "showSymbolLogo": true,
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "displayMode": "adaptive",
   "locale": "in"
 }
   </script>
