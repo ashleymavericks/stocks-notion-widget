@@ -1,1 +1,1 @@
-# indices-notion-widget
+# stocks-notion-widget
