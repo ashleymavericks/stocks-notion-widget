@@ -6,51 +6,41 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="tradingview-widget-container">
-			<div class="tradingview-widget-container__widget"></div>
-			<script
-				type="text/javascript"
-				src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-				async
-			>
-				  {
-				  "symbols": [
-				    {
-				      "proName": "FOREXCOM:SPXUSD",
-				      "title": "S&P 500"
-				    },
-				    {
-				      "proName": "FOREXCOM:NSXUSD",
-				      "title": "Nasdaq 100"
-				    },
-				    {
-				      "description": "SSE Composite",
-				      "proName": "SSE:000001"
-				    },
-				    {
-				      "description": "Sensex",
-				      "proName": "BSE:SENSEX"
-				    },
-				    {
-				      "description": "BTC/USDT",
-				      "proName": "BINANCE:BTCUSDT"
-				    },
-				    {
-				      "description": "ETH/USDT",
-				      "proName": "BINANCE:ETHUSDT"
-				    },
-				    {
-				      "description": "DOT/USDT",
-				      "proName": "BINANCE:DOTUSDT"
-				    }
-				  ],
-				  "showSymbolLogo": true,
-				  "colorTheme": "dark",
-				  "isTransparent": true,
-				  "displayMode": "adaptive",
-				  "locale": "in"
-				}
-			</script>
-		</div>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "description": "Dow Jones",
+      "proName": "CURRENCYCOM:US30"
+    },
+    {
+      "description": "Nasdaq",
+      "proName": "CURRENCYCOM:US100"
+    },
+    {
+      "description": "S&P 500",
+      "proName": "CURRENCYCOM:US500"
+    },
+    {
+      "description": "Sensex",
+      "proName": "BSE:SENSEX"
+    }
+    {
+      "description": "SSE Composite",
+      "proName": "SSE:000001"
+    }
+   
+  ],
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "showSymbolLogo": true,
+  "locale": "in"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
 	</body>
 </html>
